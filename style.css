@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.header {
+  height: 450px;
+  width: 330px;
+  overflow-y: auto;
+  background-color: tomato;
+}
+.header-title {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+#myInput {
+  height: 40px;
+  width: 75%;
+  padding: 5px 10px;
+  margin: 20px 15px;
+}
+#addbtton {
+  height: 40px;
+  padding: 5px;
+  margin-left: -20px;
+}
