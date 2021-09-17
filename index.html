@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>TO DO LIST 만들기</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body>
     <div class="header">
       <h2 class="header-title">My To Do List</h2>
-      <form class="todo-form">
-        <input id="myInput" type="text" placeholder="Title..." />
-        <input id="addbtton" type="submit" value="ADD" />
-      </form>
-      <ul id="todo-list"></ul>
+      <input id="input" type="text" placeholder="Title..." />
+      <ul></ul>
     </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#input").change(function () {
+          var input = $(this).val();
+          $("ul").append("<li>" + input + "</li>");
+          $(this).val("");
+        });
+      });
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
