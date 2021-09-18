@@ -10,7 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-.header {
+.container {
   height: 550px;
   width: 400px;
   overflow-y: auto;
@@ -30,4 +30,27 @@ body {
   border-radius: 5px;
   padding: 0 10px;
   margin: 15px 0;
+}
+
+ul li {
+  background-color: #eee;
+  color: #333;
+  height: 40px;
+  border-radius: 50px;
+  padding: 10px;
+  margin: 5px 0;
+  position: relative;
+}
+
+ul .fa-times {
+  position: absolute;
+  cursor: pointer;
+  right: 15px;
+  color: red;
+}
+
+ul .checked {
+  background: lightskyblue;
+  text-decoration: line-through;
+  transition: 0.2s;
 }
