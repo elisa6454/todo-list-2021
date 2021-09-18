@@ -14,33 +14,31 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-
-        $('input').change(function () {
+        $("#input").change(function () {
           var input = $(this).val();
-          $('ul').append('<li> <i class="fas fa-check"</i>' + input + '<i class="fas fa-times"</i> </li>');
-          $(this).val('');
+          $("ul").append(
+            "<li>" +
+              input +
+              '<i class="fas fa-check fa-2x"</i> <i class="fas fa-times"</i> </li>'
+          );
+          $(this).val("");
         });
 
-        $('ul').on('click','.fa-times',function(){
-          $(this).parent('li').fadeOut(function(){
-            $('ul').remove();
-          });
-        });
-        
-
-        $('ul').on('click','.fa-check',function(){
-          $(this).parent('li').toggleClass('check');
+        $(document).on("click", ".fa-times", function () {
+          $(this).parent("li").fadeOut(200);
         });
 
+        $(document).on("click", ".fa-check fa-2x", function () {
+          $(this).parent("li").toggleClass("checked");
+        });
       });
     </script>
-    
   </head>
   <body>
     <div class="container">
       <h2 class="header-title">My To Do List</h2>
       <input id="input" type="text" placeholder="Title..." />
       <ul></ul>
-
+    </div>
   </body>
 </html>

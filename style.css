@@ -42,19 +42,27 @@ ul li {
   position: relative;
 }
 
-ul .fa-times {
+ul .fa-check,
+.fa-times {
   position: absolute;
   cursor: pointer;
-  right: 15px;
+  margin-top: -5px;
+}
+
+ul .fa-check {
+  right: 60px;
+  color: lightslategray;
+}
+
+ul .fa-times {
+  margin-top: 2px;
+  margin: 0 5px;
+  left: 40px;
   color: red;
 }
-ul .check {
-  position: absolute;
-  cursor: pointer;
-  color: #eee;
-}
-ul li .checked {
-  background-color: lightskyblue;
+
+ul :checked {
+  background-color: lightblue;
   text-decoration: line-through;
   transition: 0.2s;
 }
