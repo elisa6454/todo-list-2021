@@ -24,12 +24,12 @@
           $(this).val("");
         });
 
-        $(document).on("click", ".fa-times", function () {
-          $(this).parent("li").fadeOut(200);
+        $("ul").on("click", ".fa-times", function () {
+          $(this).find("li").fadeOut(200);
         });
 
-        $(document).on("click", ".fa-check fa-2x", function () {
-          $(this).parent("li").toggleClass("checked");
+        $("ul").on("click", ".fa-check fa-2x", function () {
+          $(this).find("li").toggleClass("checked");
         });
       });
     </script>
