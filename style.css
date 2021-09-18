@@ -48,9 +48,13 @@ ul .fa-times {
   right: 15px;
   color: red;
 }
-
+ul .check {
+  position: absolute;
+  cursor: pointer;
+  color: #eee;
+}
 ul .checked {
-  background: lightskyblue;
+  background-color: lightblue;
   text-decoration: line-through;
   transition: 0.2s;
 }
