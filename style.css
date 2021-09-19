@@ -43,15 +43,14 @@ ul li {
 }
 
 ul .fa-check,
-.fa-times {
+ul .fa-times {
   position: absolute;
   cursor: pointer;
   margin-top: -5px;
-  margin: 0, 15px;
 }
 
 ul .fa-check {
-  right: 40px;
+  right: 60px;
   color: lightslategray;
 }
 
@@ -60,7 +59,7 @@ ul .fa-times {
   color: red;
 }
 
-ul :checked {
+ul .checked {
   background-color: lightblue;
   text-decoration: line-through;
   transition: 0.2s;

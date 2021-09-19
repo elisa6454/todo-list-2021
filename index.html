@@ -19,7 +19,7 @@
           $("ul").append(
             "<li>" +
               input +
-              '<i class="fas fa-check fa-2x"></i> <i class="fas fa-times fa-2x"</i> </li>'
+              '<i class="fas fa-check fa-2x"></i> <i class="fas fa-times fa-2x"></i> </li>'
           );
           $(this).val("");
         });
@@ -28,8 +28,8 @@
           $(this).closest("li").fadeOut(200);
         });
 
-        $(document).on("click", ".fa-check fa-2x", function () {
-          $(this).closest("li").toggleClass("clicked");
+        $(document).on("click", ".fa-check", function () {
+          $(this).closest("li").toggleClass("checked");
         });
       });
     </script>
