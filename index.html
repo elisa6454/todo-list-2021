@@ -19,17 +19,17 @@
           $("ul").append(
             "<li>" +
               input +
-              '<i class="fas fa-check fa-2x"</i> <i class="fas fa-times"</i> </li>'
+              '<i class="fas fa-check fa-2x"></i> <i class="fas fa-times fa-2x"</i> </li>'
           );
           $(this).val("");
         });
 
-        $("ul").on("click", ".fa-times", function (evt) {
-          $(this).parent("li").fadeOut(200);
+        $(document).on("click", ".fa-times", function () {
+          $(this).closest("li").fadeOut(200);
         });
 
-        $("ul").on("click", ".fa-check fa-2x", function (evt) {
-          $(this).parent("li").toggleClass("checked");
+        $(document).on("click", ".fa-check fa-2x", function () {
+          $(this).closest("li").toggleClass("clicked");
         });
       });
     </script>

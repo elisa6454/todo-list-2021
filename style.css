@@ -47,17 +47,16 @@ ul .fa-check,
   position: absolute;
   cursor: pointer;
   margin-top: -5px;
+  margin: 0, 15px;
 }
 
 ul .fa-check {
-  right: 60px;
+  right: 40px;
   color: lightslategray;
 }
 
 ul .fa-times {
-  margin-top: 2px;
-  margin: 0 5px;
-  left: 40px;
+  right: 15px;
   color: red;
 }
 
