@@ -24,15 +24,11 @@
           $(this).val("");
         });
 
-        $("ul").on("click", ".fa-times", function () {
-          $("li")
-            .parent()
-            .fadeOut(200, function () {
-              $("li").remove();
-            });
+        $("ul").on("click", ".fa-times", function (evt) {
+          $(this).parent("li").fadeOut(200);
         });
 
-        $("ul").on("click", ".fa-check fa-2x", function () {
+        $("ul").on("click", ".fa-check fa-2x", function (evt) {
           $(this).parent("li").toggleClass("checked");
         });
       });
